@@ -10,15 +10,7 @@
 name: Redmi-AX6000-hanwckf
 
 on:
-  repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
-  schedule:
-    # - cron: "0 0 ? * THU"
 
 env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
