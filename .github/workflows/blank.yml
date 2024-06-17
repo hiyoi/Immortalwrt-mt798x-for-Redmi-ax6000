@@ -20,7 +20,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      
+      - name: SSH链接管理
+        uses: P3TERX/ssh2actions@v1.0.0
 
       # Runs a single command using the runners shell
       - name: cat depends
-        run: cat .github/depends-ubuntu
+        run: ls -a
