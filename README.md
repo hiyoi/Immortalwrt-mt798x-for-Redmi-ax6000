@@ -1,4 +1,4 @@
-# 借助 GitHub Actions 的 immortalwrt-mt798x 在线自动编译.
+# 红米AX6000 immortalwrt-mt798x 纯净版
 
 ### 固件发布:
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/hiyoi/Actions-OpenWrt?style=for-the-badge&label=固件下载)](https://github.com/hiyoi/Actions-OpenWrt/releases/latest)
@@ -17,8 +17,8 @@ git clone -b openwrt-21.02 --single-branch https://github.com/hanwckf/immortalwr
 - [红米ax6000刷不死ubootmod](https://www.right.com.cn/forum/thread-8272071-1-2.html).
 
 ## .config获取
-- [参考lede](https://github.com/coolsnowwolf/lede/issues).
-- ls -a 查看隐藏文件 
+- 默认使用 [hanwckf/immortalwrt-mt798x 的config](https://github.com/hanwckf/immortalwrt-mt798x/blob/openwrt-21.02/defconfig/mt7986-ax6000.config)
+- 去掉了额外主题，luci-app-ssr-plus
 
 ### 固件初始配置
 - 默认管理IP:`192.168.5.1` 
