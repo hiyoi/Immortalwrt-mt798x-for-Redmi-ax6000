@@ -1,5 +1,8 @@
 # 借助 GitHub Actions 的 OpenWrt 在线自动编译.
 
+下载: [直达地址](https://github.com/hiyoi/Actions-OpenWrt/releases)
+
+
 ### 固件发布:
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/yishangfei/Actions-OpenWrt?style=for-the-badge&label=固件下载)](https://github.com/yishangfei/Actions-OpenWrt/releases/latest)
 
