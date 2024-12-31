@@ -130,7 +130,7 @@ jobs:
       run: |
         echo "release_tag=${{ env.FILE_DATE }}" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "固件地址:192.168.5.1\n用户名:root 密码:无" >> release.txt
+        echo "固件地址:192.168.5.1 用户名:root 密码:无" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
         
     - name: 发布至release
