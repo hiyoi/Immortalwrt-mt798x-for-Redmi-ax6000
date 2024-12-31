@@ -7,7 +7,7 @@
 # https://github.com/P3TERX/Actions-OpenWrt
 # Description: Build OpenWrt using GitHub Actions
 #
-name: bpi-r3-mini
+name: bpi-r3-mini-padavanonly
 
 on:
   workflow_dispatch:
@@ -17,8 +17,8 @@ env:
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: padavanonly/.config
-  DIY_P1_SH: hanwckf/diy-part1.sh
-  DIY_P2_SH: hanwckf/diy-part2.sh
+  DIY_P1_SH: padavanonly/diy-part1.sh
+  DIY_P2_SH: padavanonly/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
