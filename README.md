@@ -1,4 +1,4 @@
-# 红米AX6000 immortalwrt-mt798x 纯净版
+# 红米AX6000 & Bananapi R3 mini immortalwrt-mt798x
 
 ### 固件发布:
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/hiyoi/Actions-OpenWrt?style=for-the-badge&label=固件下载)](https://github.com/hiyoi/Actions-OpenWrt/releases/latest)
