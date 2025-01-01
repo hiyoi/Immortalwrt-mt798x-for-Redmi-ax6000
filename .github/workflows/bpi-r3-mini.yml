@@ -13,12 +13,12 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: padavanonly/.config
-  DIY_P1_SH: padavanonly/diy-part1.sh
-  DIY_P2_SH: padavanonly/diy-part2.sh
+  CONFIG_FILE: bpi-r3-mini/.config
+  DIY_P1_SH: bpi-r3-mini/diy-part1.sh
+  DIY_P2_SH: bpi-r3-mini/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -50,7 +50,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
          
     - name: 加载feeds.conf.default & DIY_P1_SH

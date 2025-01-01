@@ -16,9 +16,9 @@ env:
   REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: hanwckf/.config
-  DIY_P1_SH: hanwckf/diy-part1.sh
-  DIY_P2_SH: hanwckf/diy-part2.sh
+  CONFIG_FILE: redmi-ax6000/.config
+  DIY_P1_SH: redmi-ax6000/diy-part1.sh
+  DIY_P2_SH: redmi-ax6000/diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -50,7 +50,7 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH openwrt
+        git clone --depth=1 $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
          
     - name: 加载feeds.conf.default & DIY_P1_SH
